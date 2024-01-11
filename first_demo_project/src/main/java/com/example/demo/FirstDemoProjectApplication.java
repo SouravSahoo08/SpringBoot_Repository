@@ -8,10 +8,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class FirstDemoProjectApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(FirstDemoProjectApplication.class, args);
-		
-		Employee emp = context.getBean(Employee.class);
-		emp.someMethod();
+		SpringApplication.run(FirstDemoProjectApplication.class, args);
+
 	}
 
 }
