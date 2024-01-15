@@ -65,6 +65,7 @@ public class MainController {
 		if(authentication.isAuthenticated()) {
 			return jwtService.generateToken(authRequest.getUsername());
 		}else {
+			System.err.println("here");
 			throw new UsernameNotFoundException("invalid Username");
 		}
 		
